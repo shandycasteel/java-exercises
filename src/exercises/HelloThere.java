@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 
 
-public class Hello {
+public class HelloThere {
     public static void main(String[] args) {
         String name;
 

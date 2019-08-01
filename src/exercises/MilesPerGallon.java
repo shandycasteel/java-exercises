@@ -10,7 +10,7 @@ import java.util.Scanner;
  * (in gallons), and print their miles-per-gallon.
  */
 
-public class MPG {
+public class MilesPerGallon {
     public static void main(String[] args) {
         double milesDriven, gasConsumed, milesPerGallon;
 
