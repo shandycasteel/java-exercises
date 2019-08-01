@@ -17,17 +17,17 @@ public class TextSearch {
                 "pictures or conversations in it, 'and what is the use of a book,' thought Alice" +
                 "'without pictures or conversation?'";
 
-        String  searchTerm;
+        String searchTerm;
 
         Scanner in = new Scanner(System.in);
 
-        System.out.print("What word would you like to search for? ");
-        searchTerm = in.next().toLowerCase();
+        System.out.print("What term would you like to search for? ");
+        searchTerm = in.nextLine().toLowerCase();
 
         if (story.toLowerCase().contains(searchTerm)) {
-            System.out.println("\nWe found your word!");
+            System.out.println("\nWe found the term!");
         } else {
-            System.out.println("\nYour word is not in the selected text.");
+            System.out.println("\nYour term is not in the selected text.");
         }
 
     }
