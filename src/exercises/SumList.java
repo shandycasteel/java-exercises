@@ -22,16 +22,21 @@ public class SumList {
         numbers.add(18);
         numbers.add(19);
         numbers.add(20);
+        numbers.add(21);
+        numbers.add(22);
 
-        int sum = 0;
+        int evenSum = 0, oddSum  = 0;
 
-        for (int i = 0; i <= numbers.size(); i++) {
-            if (i % 2 == 0) {
-                sum = sum + i;
+        for (int number : numbers) {
+            if (number % 2 == 0) {
+                evenSum += number;
+            } else {
+                oddSum += number;
             }
         }
 
-        System.out.println("The sum of the even numbers in your list is: " + sum);
+        System.out.println("The sum of the even numbers in your list is: " + evenSum);
+        System.out.println("Not that you  asked, but the sum of the odd numbers in your list is: " + oddSum);
 
     }
 }

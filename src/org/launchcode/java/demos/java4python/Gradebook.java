@@ -15,7 +15,7 @@ public class Gradebook {
         Scanner in = new Scanner(System.in);
         String newStudent;
 
-        System.out.println("Enter your students (or ENTER to finish):");
+        System.out.print("Enter your students (or ENTER to finish): ");
 
         // Get student names
         do {
@@ -23,6 +23,7 @@ public class Gradebook {
 
             if (!newStudent.equals("")) {
                 students.add(newStudent);
+                System.out.print("\nNext student: ");
             }
 
         } while(!newStudent.equals(""));

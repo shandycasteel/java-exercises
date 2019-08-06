@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Area {
     public static void main(String[] args) {
-        double radius, area;
+        double radius, area ;
 
         Scanner in = new Scanner(System.in);
 
