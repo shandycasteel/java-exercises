@@ -19,12 +19,16 @@ public class MilesPerGallon {
         System.out.print("How many miles did you drive? ");
         milesDriven = in.nextDouble();
 
-        System.out.print("How much gas (in gallons) did you use? ");
-        gasConsumed = in.nextDouble();
+        if (milesDriven % 1 != 0) {
 
-        milesPerGallon = milesDriven / gasConsumed;
+            System.out.print("How much gas (in gallons) did you use? ");
+            gasConsumed = in.nextDouble();
 
-        System.out.println("\nThat comes out to " + milesPerGallon + " miles per gallon for that trip.");
+            milesPerGallon = milesDriven / gasConsumed;
 
+            System.out.println("\nThat comes out to " + milesPerGallon + " miles per gallon for that trip.");
+
+        }
     }
+
 }
